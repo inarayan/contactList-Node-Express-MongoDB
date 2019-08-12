@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title><%= locals.title%></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"/>
+    <link rel="stylesheet" href="home.css"/>
+    
+</head>
+<body>
+    <body>
+        <div id="container">
+
+       <div id="title-container">
+        <p>Contact List</p>
+       </div>
+       <div id="contact-List-container">
+
+       <table id="contact-list-table">
+           <tr>
+           <th>Name</th>
+           <th>Contact</th>
+           <th style="width: 10%">Action</th>
+           </tr>
+           <% for ( let i of contactList ){%>
+           <tr>
+               <td><%= i.name %></td>
+               <td><%= i.phone %></td>
+               <td style="width: 10%"><a href="/delete-contact/<%= i._id %>"><i class="fas fa-trash-alt"></i></a></td>    
+           </tr>
+           <% }%> 
+       </table>
+        
+    </div>
+    </div>
+    <div class='add-contact-container'>
+        <form action='/add-contact' method="POST">
+            Name : <input type="text" name="name"/>
+            Phone : <input type="text" name="phone"/>
+            <button type="submit">Add User</button>
+        </form>
+    </div>
+    </body>
+</body>
+</html>

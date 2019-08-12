@@ -1,0 +1,36 @@
+#title-container p{
+    text-align: center;
+    text-justify: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+#contact-list-table{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+#contact-list-table td, #contact-list-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #contact-list-table tr:nth-child(even){background-color: #f2f2f2;}
+
+  #contact-list-table tr:hover {background-color: #ddd;}
+
+  #contact-list-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.add-contact-container{
+    margin-top: 1rem;
+   
+    text-align: center;
+  
+
+}
